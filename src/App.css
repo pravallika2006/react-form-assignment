@@ -1,38 +1,113 @@
-.App {
-  text-align: center;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.form-card, .details-card {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 400px; /* Minimal width */
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* Important for padding */
+}
+
+/* Red border for errors */
+.error {
+  color: red;
+  font-size: 12px;
+  display: block;
+  margin-top: 2px;
+}
+
+/* Password Toggle Styling */
+.password-group {
+  position: relative;
+}
+
+.toggle-btn {
+  position: absolute;
+  right: 10px;
+  top: 12px; /* Adjusted to fit inside input */
+  background: none;
+  border: none;
+  color: blue;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+/* Phone Group Styling */
+.phone-group {
+  display: flex;
+  gap: 10px;
+}
+.phone-group select {
+  width: 30%;
+}
+.phone-group input {
+  width: 70%;
+}
+
+/* Submit Button */
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #28a745;
   color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.submit-btn.disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.back-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 500px) {
+  .form-card {
+    padding: 20px;
   }
 }
