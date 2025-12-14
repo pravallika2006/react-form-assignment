@@ -17,4 +17,4 @@ This is a React assignment demonstrating a registration form with validation and
    npm start
 
 ## Demo Video
-Click here to watch the demo video:(https://drive.google.com/file/d/1M4Jbeu-AqGS2WRz62LyOSH08XYg6CsqO/view?usp=sharing)
+Click here to watch the demo video: https://drive.google.com/file/d/1M4Jbeu-AqGS2WRz62LyOSH08XYg6CsqO/view?usp=sharing
